@@ -1,33 +1,37 @@
-*{
+* {
     margin-right: 0;
-    
+
     margin-left: 0;
     scroll-behavior: smooth;
 }
 
-
 @font-face {
-    font-family: 'Museo Sans Rounded';
-    src: local('Museo Sans Rounded 300'), local('Museo-Sans-Rounded-300'),
-    url('http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-300.woff2') format('woff2'),
-    url('http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-300.woff') format('woff'),
-    url('http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-300.ttf') format('truetype');
+    font-family: "Museo Sans Rounded";
+    src: local("Museo Sans Rounded 300"), local("Museo-Sans-Rounded-300"),
+        url("http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-300.woff2")
+            format("woff2"),
+        url("http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-300.woff")
+            format("woff"),
+        url("http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-300.ttf")
+            format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Museo Sans Rounded';
-    src: local('Museo Sans Rounded 700'), local('Museo-Sans-Rounded-700'),
-    url('http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-700.woff2') format('woff2'),
-    url('http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-700.woff') format('woff'),
-    url('http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-700.ttf') format('truetype');
+    font-family: "Museo Sans Rounded";
+    src: local("Museo Sans Rounded 700"), local("Museo-Sans-Rounded-700"),
+        url("http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-700.woff2")
+            format("woff2"),
+        url("http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-700.woff")
+            format("woff"),
+        url("http://marketotest2.clever-touch.com/rs/230-FAB-248/images/MuseoSansRounded-700.ttf")
+            format("truetype");
     font-weight: bold;
     font-style: normal;
 }
 body {
     font-family: "Museo Sans Rounded", Calibri, Arial, sans-serif;
 }
-
 
 .container {
     justify-content: center;
@@ -37,7 +41,7 @@ body {
 .nav {
     position: relative;
     width: 100%;
-    height: 150%; 
+    height: 150%;
     background-color: #f5f6f7;
     padding: 0;
     margin-top: 0;
@@ -57,7 +61,7 @@ body {
 .nav-link-wrapper a:hover {
     color: #e72176;
     border-bottom: 2px solid #e72176;
-}    
+}
 
 nav {
     display: flex;
@@ -117,15 +121,14 @@ span {
 }
 
 .nav {
-    background-image: url("http://marketotest2.clever-touch.com/rs/230-FAB-248/images/Wallpaper.jpg"); 
-    background-color: #bfe9fc; 
-    height: 720px; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-image: url("http://marketotest2.clever-touch.com/rs/230-FAB-248/images/Wallpaper.jpg");
+    background-color: #bfe9fc;
+    height: 720px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-blend-mode: screen;
 }
-
 
 .images {
     width: 45%;
@@ -133,7 +136,8 @@ span {
     position: absolute;
     bottom: 0;
     right: 80px;
-    clip-path: ellipse(26% 43% at 60% 50%);}
+    clip-path: ellipse(26% 43% at 60% 50%);
+}
 
 .images img {
     height: 100%;
@@ -144,13 +148,12 @@ span {
     transition: bottom 1s, left 1s;
 }
 
-
 .aboutMe-wrapper {
     padding: 20px;
     position: relative;
-    text-align: center; 
+    text-align: center;
     background-color: #e6e7eb;
-/*  height: 100%;
+    /*  height: 100%;
     width: 100%;
     background-color: #cfebdf;
     clip-path: ellipse(29% 68% at 6% 55%);
@@ -180,9 +183,10 @@ span {
     background-color: transparent;
     width: 250px;
     height: 250px;
-    perspective: 1000px; 
+    perspective: 1000px;
+    border-radius: 15px;
 }
-  
+
 .flip-box-inner {
     position: relative;
     width: 100%;
@@ -190,19 +194,22 @@ span {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border-radius: 15px;
 }
-  
+
 .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
 }
-  
-.flip-box-front, .flip-box-back {
+
+.flip-box-front,
+.flip-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-}  
+    border-radius: 15px;
+}
 
 .flip-box-front {
     background-color: #bbb;
@@ -214,7 +221,10 @@ span {
     color: white;
     transform: rotateY(180deg);
 }
-  
+
+.mktoImg {
+    border-radius: 15px;
+}
 
 .experience-wrapper {
     background-color: white;
@@ -233,7 +243,6 @@ span {
     padding: 10px;
 }
 
-
 .footer {
     background: #253746;
     color: #98a4af;
@@ -241,7 +250,7 @@ span {
     position: relative;
 }
 
-.footer .footer-content{
+.footer .footer-content {
     height: 350px;
     display: flex;
 }
@@ -262,7 +271,7 @@ span {
     margin-bottom: 8px;
 }
 
-.links ul a{
+.links ul a {
     display: block;
     margin-bottom: 10px;
     font-size: 1.2em;
@@ -272,7 +281,7 @@ span {
 .links ul a:hover {
     color: #e72176;
     margin-left: 15px;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .contact-form .contact-input {
@@ -280,7 +289,7 @@ span {
     color: #98a4af;
     margin-bottom: 10px;
     line-height: 1.5rem;
-    padding: .7rem 1.2rem;
+    padding: 0.7rem 1.2rem;
     border: #98a4af;
 }
 
@@ -297,32 +306,31 @@ span {
 }
 
 @media only screen and (max-width: 600px) {
-   .footer .footer-content{
-    flex-direction: column;
-    height: 820px;
-    background: #253746;
-   }
+    .footer .footer-content {
+        flex-direction: column;
+        height: 820px;
+        background: #253746;
+    }
 
-   .images{
-    clip-path: ellipse(50% 30% at 75% 40%);
-    bottom: -150px;
-    left: 150px;
-   }
+    .images {
+        clip-path: ellipse(50% 30% at 75% 40%);
+        bottom: -150px;
+        left: 150px;
+    }
 
-   .hobbies-img-wrapper{
-    flex-direction: column;
-    padding: 10px;
-    align-items: center;
-   }
+    .hobbies-img-wrapper {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
 
-   .footer .footer-bottom {
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: static;
-    padding: 0;
-    margin: 0;
+    .footer .footer-bottom {
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: static;
+        padding: 0;
+        margin: 0;
+    }
 }
-}
-
